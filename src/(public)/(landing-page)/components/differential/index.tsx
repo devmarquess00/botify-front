@@ -15,7 +15,7 @@ const Differential = () => {
         />
         <div className="flex space-x-16 mt-6">
           <Image
-            src="/mobile-image.svg"
+            src="/chat-differential.svg"
             height={400}
             width={400}
             alt="mobile-image"

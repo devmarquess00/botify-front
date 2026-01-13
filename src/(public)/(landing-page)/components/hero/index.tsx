@@ -27,7 +27,8 @@ const Hero = () => {
           width={300}
           height={300}
           alt="chatbot-image"
-          src="/chatbot-image.svg"
+          src="/chat-hero-2.svg"
+          className="w-102"
         />
       </div>
     </section>

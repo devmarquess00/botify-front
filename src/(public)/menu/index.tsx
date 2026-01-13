@@ -105,3 +105,14 @@ export const menuAvaliations = [
   //     "Antes perdíamos muitos leads por demora no atendimento. Hoje o ChatBot responde na hora, explica planos e encaminha o cliente pronto para fechar.",
   // },
 ];
+
+export const menuFooter = [
+  { id: 1, label: "Como funciona?", href: "#" },
+  { id: 2, label: "Qual o diferencial?", href: "#" },
+  { id: 3, label: "Por que devo ter um ChatBot?", href: "#" },
+  { id: 4, label: "Veja avaliacoes", href: "#" },
+  { id: 5, label: "Visualizar Planos", href: "#" },
+  { id: 6, label: "Perguntas frequentes", href: "#" },
+  { id: 8, label: "Politica de privacidade", href: "#" },
+  { id: 7, label: "Termos e condicoes", href: "#" },
+];

@@ -1,0 +1,66 @@
+import { menuFooter } from "@/(public)/menu";
+import { Title } from "@/(public)/ui/title";
+import Image from "next/image";
+
+const Footer = () => {
+  return (
+    <footer className="w-full bg-white lg:px-100 lg:py-20">
+      <div className="flex justify-center space-x-20">
+        <ul className="font-hedvig">
+          <Title
+            title="Recurso"
+            as="h3"
+            className="font-normal! text-lg! mb-6 font-h font-poppins!"
+          />
+          {menuFooter.slice(0, 3).map((menu) => (
+            <li
+              key={menu.id}
+              className="text-zinc-800 font-semibold! text-sm! my-3.5"
+            >
+              {menu.label}
+            </li>
+          ))}
+        </ul>
+        <ul className="font-hedvig">
+          <Title
+            title="Informaçao"
+            as="h3"
+            className="font-normal! text-lg! mb-6 font-poppins!"
+          />
+          {menuFooter.slice(3, 6).map((menu) => (
+            <li
+              key={menu.id}
+              className="text-zinc-800 font-semibold! text-sm! my-3.5"
+            >
+              {menu.label}
+            </li>
+          ))}
+        </ul>
+        <ul className="font-hedvig">
+          <Title
+            title="Legal"
+            as="h3"
+            className="font-normal! text-lg! mb-6 font-poppins!"
+          />
+          {menuFooter.slice(6, 8).map((menu) => (
+            <li
+              key={menu.id}
+              className="text-zinc-800 font-semibold! text-sm! my-3.5"
+            >
+              {menu.label}
+            </li>
+          ))}
+        </ul>
+        <Image
+          alt="chat-footer"
+          width={300}
+          height={300}
+          src="/chat-footer.svg"
+          className="w-84"
+        />
+      </div>
+    </footer>
+  );
+};
+
+export { Footer };
