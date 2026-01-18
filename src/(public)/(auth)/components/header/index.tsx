@@ -1,7 +1,6 @@
-import Link from "next/link";
 import { Title } from "@/(public)/ui/title";
+import Link from "next/link";
 import { Button } from "@/(public)/ui/button";
-import { menuHeader } from "@/(public)/menu";
 
 const Header = () => {
   return (
@@ -10,21 +9,11 @@ const Header = () => {
         <Link href="/">
           <Title title="Botify" as="h1" />
         </Link>
-
-        <ul className="flex items-center space-x-6">
-          {menuHeader.map((menu) => (
-            <Link href={menu.href} key={menu.id}>
-              <li className="text-sm text-black/70 duration-200 ease-in hover:cursor-pointer hover:text-black">
-                {menu.label}
-              </li>
-            </Link>
-          ))}
-        </ul>
       </div>
 
-      <Link href="/auth">
+      <div>
         <Button text="Começar" variant="black" />
-      </Link>
+      </div>
     </header>
   );
 };

@@ -4,6 +4,7 @@ import { Works } from "@/(public)/(landing-page)/components/works";
 import { Header } from "@/(public)/(landing-page)/components/header";
 import { Footer } from "@/(public)/(landing-page)/components/footer";
 import { Improve } from "@/(public)/(landing-page)/components/improve";
+import { CallPlans } from "@/(public)/(landing-page)/components/call-plans";
 import { Avaliation } from "@/(public)/(landing-page)/components/avaliations";
 import { Differential } from "@/(public)/(landing-page)/components/differential";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Differential />
       <Avaliation />
       <Faq />
+      <CallPlans />
       <Footer />
     </main>
   );

@@ -1,9 +1,9 @@
 import { LuBot, LuClock, LuTrendingUp } from "react-icons/lu";
 
 export const menuHeader = [
-  { id: 1, label: "Início", href: "" },
-  { id: 3, label: "Como funciona?", href: "" },
-  { id: 2, label: "Preços", href: "" },
+  { id: 1, label: "Início", href: "/" },
+  { id: 3, label: "Como funciona?", href: "/" },
+  { id: 2, label: "Preços", href: "/plans" },
 ];
 
 export const menuSteps = [
@@ -97,13 +97,6 @@ export const menuAvaliations = [
     testimonial:
       "O que mais gostei foi a facilidade de configurar tudo. Em pouco tempo o ChatBot já estava funcionando e ajudando a filtrar clientes realmente interessados.",
   },
-  // {
-  //   id: 4,
-  //   name: "Ana Paula Ribeiro",
-  //   role: "Gestora de Academia",
-  //   testimonial:
-  //     "Antes perdíamos muitos leads por demora no atendimento. Hoje o ChatBot responde na hora, explica planos e encaminha o cliente pronto para fechar.",
-  // },
 ];
 
 export const menuFooter = [
@@ -115,4 +108,51 @@ export const menuFooter = [
   { id: 6, label: "Perguntas frequentes", href: "#" },
   { id: 8, label: "Politica de privacidade", href: "#" },
   { id: 7, label: "Termos e condicoes", href: "#" },
+];
+
+export const menuRecourses = [
+  {
+    planBasic: [
+      { id: 1, label: "1 ChatBot conectado ao WhatsApp", active: true },
+      { id: 2, label: "Conexão via WhatsApp", active: true },
+      {
+        id: 3,
+        label: "Criação guiada (passo a passo)",
+        active: true,
+      },
+      {
+        id: 4,
+        label: "Crie e personalize o seu ChatBot",
+        active: true,
+      },
+      {
+        id: 5,
+        label: "Configuração mensagens e fluxos",
+        active: true,
+      },
+      { id: 6, label: "Editar ChatBot após publicado", active: false },
+      { id: 7, label: "Criacao ilimitada de ChatBots", active: false },
+    ],
+    planPro: [
+      { id: 1, label: "1 ChatBot conectado ao WhatsApp", active: true },
+      { id: 2, label: "Conexão via WhatsApp", active: true },
+      {
+        id: 3,
+        label: "Criação guiada (passo a passo)",
+        active: true,
+      },
+      {
+        id: 4,
+        label: "Crie e personalize o seu ChatBot",
+        active: true,
+      },
+      {
+        id: 5,
+        label: "Configuração mensagens e fluxos",
+        active: true,
+      },
+      { id: 6, label: "Editar ChatBot após publicado", active: true },
+      { id: 7, label: "Criacao ilimitada de ChatBots", active: true },
+    ],
+  },
 ];
