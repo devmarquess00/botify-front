@@ -4,7 +4,11 @@ import { Button } from "@/(public)/ui/button";
 import { menuHeader } from "@/(public)/menu";
 import { LuMenu } from "react-icons/lu";
 
-const Header = () => {
+type Props = {
+  toggleShowDropdown: () => void;
+};
+
+const Header = ({ toggleShowDropdown }: Props) => {
   return (
     <header className="flex items-center justify-between w-full bg-white font-poppins px-10 py-6 lg:py-6 sm:px-20 lg:px-30 2xl:px-100">
       <div className="flex items-center space-x-10">
@@ -27,6 +31,7 @@ const Header = () => {
         text={<LuMenu size={22} color="#000" />}
         variant="black"
         className="bg-transparent! p-0! md:hidden"
+        onClick={toggleShowDropdown}
       />
 
       <Link href="/auth" className="hidden md:block">

@@ -12,7 +12,7 @@ const Login = () => {
         <Title
           as="h1"
           title="Faça seu login"
-          className="font-hedvig text-5xl"
+          className="font-hedvig text-4xl sm:text-5xl"
         />
         <Subtitle subtitle="É gratuito e rápido." className="font-poppins" />
 
