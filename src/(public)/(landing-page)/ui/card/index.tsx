@@ -10,7 +10,7 @@ type Props = {
 
 const Card = ({ icon, title, subtitle }: Props) => {
   return (
-    <div className="bg-white rounded-md px-10 py-6 w-86 h-92">
+    <div className="bg-white rounded-md px-10 py-6 w-full h-full 2xl:w-86 lg:h-92">
       <div className="flex flex-col justify-center items-center">
         <span className="text-green-primary text-5xl">{icon}</span>
         <Title

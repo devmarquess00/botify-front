@@ -1,13 +1,16 @@
+import { ReactNode } from "react";
+
 type Props = {
-  text?: string;
+  text?: ReactNode;
   onClick?: () => void;
   className?: string;
-  variant: "black" | "green";
+  variant: "black" | "blackWithBorder" | "green";
 };
 
 const Button = ({ text, onClick, className, variant }: Props) => {
   const classButton = {
     black: "bg-black/90 hover:bg-black",
+    blackWithBorder: "border border-black/90 text-black!",
     green: "bg-green-primary text-black!",
   };
 

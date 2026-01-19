@@ -11,7 +11,7 @@ type Props = {
 
 const FaqCard = ({ onClick, showButton, title, subtitle }: Props) => {
   return (
-    <div className="bg-black/90 w-full flex flex-col space-x-4 py-6 px-8 rounded-xl">
+    <div className="bg-black/90 w-full flex flex-col space-x-4 py-4 px-6 sm:py-6 sm:px-8 rounded-xl">
       <div className="flex items-center space-x-4">
         <button onClick={onClick} className="hover:cursor-pointer">
           {showButton ? (
@@ -23,7 +23,7 @@ const FaqCard = ({ onClick, showButton, title, subtitle }: Props) => {
         <Title
           as="h3"
           title={title}
-          className="text-white text-base!"
+          className="text-white text-sm! sm:text-base!"
         />
       </div>
 
@@ -34,7 +34,7 @@ const FaqCard = ({ onClick, showButton, title, subtitle }: Props) => {
       >
         <Subtitle
           subtitle={subtitle}
-          className="text-zinc-500"
+          className="text-zinc-500 text-xs! sm:text-base!"
         />
       </div>
     </div>

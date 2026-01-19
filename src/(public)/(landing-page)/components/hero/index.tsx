@@ -5,12 +5,12 @@ import { Button } from "@/(public)/ui/button";
 
 const Hero = () => {
   return (
-    <section className="flex items-center justify-between w-full lg:py-10 lg:px-100">
-      <div className="lg:max-w-2xl">
+    <section className="flex flex-col lg:flex-row items-center justify-between w-full py-10 px-10 sm:px-14 sm:py-16 lg:px-30 2xl:px-100">
+      <div className="w-full sm:max-w-2xl">
         <Title
           title="Aumente suas vendas com um ChatBot totalmente personalizado!"
           as="h1"
-          className="text-5xl font-hedvig "
+          className="text-4xl sm:text-5xl font-hedvig"
         />
         <Subtitle
           subtitle="Pare de perder tempo respondendo as mesmas perguntas todos os dias — horário de funcionamento, preços, disponibilidade, endereço. Deixe um ChatBot totalmente personalizado cuidar do atendimento básico, responder seus clientes na hora certa e 24h por dia, enquanto você foca no que realmente importa: vender mais, organizar seu negócio e fazer ele crescer de verdade."

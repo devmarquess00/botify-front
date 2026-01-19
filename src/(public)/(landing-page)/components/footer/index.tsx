@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-white lg:px-100 lg:py-20">
-      <div className="flex justify-center space-x-20">
+    <footer className="w-full bg-white px-10 py-12 lg:px-30 2xl:px-100 lg:py-20">
+      <div className="flex flex-col lg:flex-row justify-center space-x-20">
         <ul className="font-hedvig">
           <Title
             title="Recurso"

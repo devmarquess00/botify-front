@@ -7,13 +7,13 @@ import { menuDifferential } from "@/(public)/menu";
 const Differential = () => {
   return (
     <section className="w-full bg-white">
-      <div className="flex flex-col w-full lg:px-110 lg:py-14">
+      <div className="flex flex-col w-full px-10 py-12 sm:px-14 sm:py-16 lg:px-30 2xl:px-110 lg:py-14">
         <Title
           title="Por que escolher a Botify para criar o seu ChatBot?"
           as="h1"
-          className="font-poppins"
+          className="font-poppins sm:max-w-lg lg:max-w-full"
         />
-        <div className="flex space-x-16 mt-6">
+        <div className="flex flex-col lg:flex-row space-x-16 lg:space-x-18 mt-6">
           <Image
             src="/chat-differential.svg"
             height={400}

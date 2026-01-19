@@ -2,16 +2,18 @@
 import { Title } from "@/(public)/ui/title";
 import { FaqCard } from "@/(public)/(landing-page)/ui/faq-card";
 import { useLandingPage } from "@/(public)/(landing-page)/hooks/useLandingPage";
+import { useMediaQuery } from "@/(public)/(landing-page)/hooks/useMediaQuery";
 
 const Faq = () => {
   const { faq1, setFaq1, faq2, setFaq2, faq3, setFaq3, faq4, setFaq4 } =
     useLandingPage();
+  const isMobile = useMediaQuery("(max-width: 767px)");
 
   return (
-    <section className="w-full lg:px-100 lg:py-16 bg-white">
+    <section className="w-full px-10 py-12 lg:px-30 2xl:px-100 lg:py-16 bg-white">
       <Title
         title="Perguntas frequentes"
-        as="h1"
+        as={isMobile ? "h2" : "h1"}
         className="text-center font-poppins font-normal!"
       />
       <div className="flex flex-col space-y-2 mt-8 font-poppins lg:px-40">

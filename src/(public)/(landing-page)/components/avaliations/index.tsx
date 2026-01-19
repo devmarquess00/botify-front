@@ -1,20 +1,24 @@
+"use client";
 import { menuAvaliations } from "@/(public)/menu";
 import { Subtitle } from "@/(public)/ui/subtitle";
 import { Title } from "@/(public)/ui/title";
+import { useMediaQuery } from "@/(public)/(landing-page)/hooks/useMediaQuery";
 
 const Avaliation = () => {
+  const isMobile = useMediaQuery("(max-width: 767px)");
+
   return (
-    <section className="w-full lg:px-100 lg:py-16">
+    <section className="w-full flex flex-col items-center justify-center px-10 py-12 lg:px-30 2xl:px-100 lg:py-16">
       <Title
         title="Veja o que os nossos clientes dizem"
-        as="h1"
+        as={isMobile ? "h2" : "h1"}
         className="font-normal! font-poppins text-center"
       />
-      <div className="flex items-center space-x-8 mt-12">
+      <div className="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-8 mt-6 lg:mt-12">
         {menuAvaliations.map((menu) => (
           <div
             key={menu.id}
-            className="bg-black/90 rounded-xl h-62 w-82 lg:px-8 lg:py-4 relative"
+            className="bg-black/90 rounded-xl w-full h-52 lg:h-62 lg:w-82 px-8 py-2 lg:py-4 relative"
           >
             <Subtitle
               subtitle={menu.testimonial}

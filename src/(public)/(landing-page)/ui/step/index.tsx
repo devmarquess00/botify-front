@@ -23,7 +23,7 @@ const Step = ({ step, title, subtitle }: Props) => {
         />
         <Subtitle
           subtitle={subtitle}
-          className="text-center mt-2 font-hedvig text-zinc-500"
+          className="text-center mt-2 font-hedvig text-zinc-500 sm:max-w-md lg:max-w-full"
         />
       </div>
     </div>

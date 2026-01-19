@@ -2,16 +2,17 @@ import Link from "next/link";
 import { Title } from "@/(public)/ui/title";
 import { Button } from "@/(public)/ui/button";
 import { menuHeader } from "@/(public)/menu";
+import { LuMenu } from "react-icons/lu";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between w-full bg-white font-poppins lg:py-6 lg:px-100">
+    <header className="flex items-center justify-between w-full bg-white font-poppins px-10 py-6 lg:py-6 sm:px-20 lg:px-30 2xl:px-100">
       <div className="flex items-center space-x-10">
         <Link href="/">
           <Title title="Botify" as="h1" />
         </Link>
 
-        <ul className="flex items-center space-x-6">
+        <ul className="hidden md:flex items-center space-x-6">
           {menuHeader.map((menu) => (
             <Link href={menu.href} key={menu.id}>
               <li className="text-sm text-black/70 duration-200 ease-in hover:cursor-pointer hover:text-black">
@@ -22,7 +23,13 @@ const Header = () => {
         </ul>
       </div>
 
-      <Link href="/auth">
+      <Button
+        text={<LuMenu size={22} color="#000" />}
+        variant="black"
+        className="bg-transparent! p-0! md:hidden"
+      />
+
+      <Link href="/auth" className="hidden md:block">
         <Button text="Começar" variant="black" />
       </Link>
     </header>
