@@ -10,8 +10,8 @@ const Content = ({ steps }: Props) => {
   const componentsSteps = [<Login />, <Register />];
 
   return (
-    <main className="w-full flex-1 flex items-center justify-center space-x-10 max-w-6xl">
-      <section className="w-full border-r border-zinc-200 pr-20">
+    <main className="w-full flex-1 flex flex-col lg:flex-row items-center justify-center py-12 lg:space-x-10 lg:max-w-6xl">
+      <section className="w-full lg:border-r lg:border-zinc-200 lg:pr-20 px-10 md:px-20">
         {componentsSteps[steps]}
       </section>
 

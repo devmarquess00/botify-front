@@ -12,7 +12,7 @@ type Props = {
 
 const CardPlan = ({ title, subtitle, price, recourses }: Props) => {
   return (
-    <div className="bg-white py-12 px-10 rounded-lg shadow-md w-96 font-poppins">
+    <div className="bg-white py-12 px-10 rounded-lg shadow-md w-full lg:w-96 font-poppins">
       <section>
         <Title as="h1" title={title as string} className="font-hedvig!" />
         <Subtitle subtitle={subtitle as string} className="text-sm mb-6" />
