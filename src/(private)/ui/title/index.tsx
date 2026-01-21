@@ -1,6 +1,6 @@
 import { classNamesTitle } from "@/(private)/ui/title/constants";
 
-type VariantTitleProps = "h1" | "h2" | "h3";
+type VariantTitleProps = "title-big" | "title-medium" | "title-small";
 type Props = {
   title: string;
   className?: string;

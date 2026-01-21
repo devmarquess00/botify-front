@@ -1,5 +1,5 @@
 export const classNamesSubtitle = {
   "subtitle-big": "text-xl",
-  "subtitle-medium": "text-base",
-  "subtitle-small": "text-sm",
+  "subtitle-medium": "text-sm",
+  "subtitle-small": "text-xs",
 };

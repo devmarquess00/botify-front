@@ -4,20 +4,20 @@ import { SidebarMenu } from "@/(private)/constants";
 import { SidebarProps } from "@/(private)/constants";
 import { LuPanelRight } from "react-icons/lu";
 import { Button } from "@/(private)/ui/button";
-import { useSidebar } from "@/(private)/hooks/useSidebar";
+import { useLayout } from "@/(private)/hooks/useLayout";
 import { Title } from "@/(private)/ui/title";
 
 const Sidebar = () => {
-  const { isOpen, toggleSidebar } = useSidebar();
+  const { isOpen, toggleSidebar } = useLayout();
 
   return (
     <aside
-      className={`border-r border-zinc-200 bg-white h-screen px-6 py-6 flex flex-col ${isOpen ? "w-64 items-start relative" : "w-28 items-center"}`}
+      className={`duration-200 border-r border-zinc-200 bg-white h-screen px-6 py-6 flex flex-col ${isOpen ? "w-72 items-start relative" : "w-28 items-center"}`}
     >
       <div
         className={`w-full flex items-center mb-2 ${isOpen ? "justify-between" : "justify-center"}`}
       >
-        {isOpen && <Title title="Botify" variantTitle="h2" />}
+        {isOpen && <Title title="Botify" variantTitle="title-medium" />}
         <Button
           className="p-3 rounded-md hover:bg-green-primary/20"
           onClick={toggleSidebar}
@@ -34,10 +34,10 @@ const Sidebar = () => {
               <Link
                 key={menu.id}
                 href={menu.href}
-                className={`font-normal duration-200 flex w-full text-sm hover:bg-green-primary/20 p-3 rounded-md ${isOpen ? "justify-start items-start space-x-4" : "justify-center items-center"}`}
+                className={`font-normal duration-200 flex w-full text-sm hover:bg-green-primary/20 rounded-md px-2 ${isOpen ? "space-x-4 items-center" : "justify-center items-center space-x-0"}`}
               >
                 <Icon size={20} />
-                {isOpen && <li>{menu.label}</li>}
+                <li className={`${isOpen ? 'flex items-center opacity-100 w-auto h-12' : 'opacity-0 w-0 h-12'}`}>{menu.label}</li>
               </Link>
             );
           })}
