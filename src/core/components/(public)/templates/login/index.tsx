@@ -1,18 +1,16 @@
+import { FormLogin } from "@/core/components/(public)/organisms/formLogin";
+import { FormRegister } from "@/core/components/(public)/organisms/formRegister";
 import Image from "next/image";
-import { Login } from "@/(public)/(auth)/components/login";
-import { Register } from "@/(public)/(auth)/components/register";
 
 type Props = {
   steps: number;
 };
 
-const Content = ({ steps }: Props) => {
-  const componentsSteps = [<Login />, <Register />];
-
+const TemplateLogin = ({ steps }: Props) => {
   return (
     <main className="w-full flex-1 flex flex-col lg:flex-row items-center justify-center py-12 lg:space-x-10 lg:max-w-6xl">
       <section className="w-full lg:border-r lg:border-zinc-200 lg:pr-20 px-10 md:px-20">
-        {componentsSteps[steps]}
+        {steps === 0 ? <FormLogin /> : <FormRegister />}
       </section>
 
       <Image
@@ -28,4 +26,4 @@ const Content = ({ steps }: Props) => {
   );
 };
 
-export { Content };
+export { TemplateLogin };
