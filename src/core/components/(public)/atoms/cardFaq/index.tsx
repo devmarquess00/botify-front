@@ -1,6 +1,6 @@
-import { Subtitle } from "@/core/components/(public)/atoms/subtitle";
-import { Title } from "@/core/components/(public)/atoms/title";
 import { LuMinus, LuPlus } from "react-icons/lu";
+import { Subtitle } from '@/core/components/(public)/atoms/subtitle'
+import { Title } from '@/core/components/(public)/atoms/title'
 
 type Props = {
   onClick: () => void;
@@ -9,9 +9,9 @@ type Props = {
   subtitle: string;
 };
 
-const FaqCard = ({ onClick, showButton, title, subtitle }: Props) => {
-  return (
-    <div className="bg-black/90 w-full flex flex-col space-x-4 py-4 px-6 sm:py-6 sm:px-8 rounded-xl">
+const CardFaq = ({ onClick, showButton, title, subtitle }: Props) => {
+    return (
+        <div className="bg-black/90 w-full flex flex-col space-x-4 py-4 px-6 sm:py-6 sm:px-8 rounded-xl">
       <div className="flex items-center space-x-4">
         <button onClick={onClick} className="hover:cursor-pointer">
           {showButton ? (
@@ -38,7 +38,7 @@ const FaqCard = ({ onClick, showButton, title, subtitle }: Props) => {
         />
       </div>
     </div>
-  );
-};
+    )
+}
 
-export { FaqCard };
+export { CardFaq }

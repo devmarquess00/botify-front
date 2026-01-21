@@ -1,5 +1,5 @@
 import { menuRecourses } from "@/(public)/menu";
-import { CardPlan } from "@/(public)/(plans)/components/card-plan";
+import { CardPlan } from '@/core/components/(public)/molecules/cardPlan'
 import { Title } from "@/core/components/(public)/atoms/title";
 import { Subtitle } from "@/core/components/(public)/atoms/subtitle";
 

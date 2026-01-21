@@ -1,8 +1,8 @@
 "use client";
-import { Dropdown } from "@/(public)/(landing-page)/components/dropdown";
-import { Header } from "@/(public)/(landing-page)/components/header";
+import { Dropdown } from "@/core/components/(public)/molecules/dropdown";
 import { useLandingPage } from "@/(public)/(landing-page)/hooks/useLandingPage";
-import { PlansContent } from "@/(public)/(plans)/components/plans";
+import { PlansTemplate } from "@/core/components/(public)/templates/plans";
+import { Header } from "@/core/components/(public)/molecules/header";
 
 export default function Plans() {
   const { toggleShowDropdown, isShowDropdown } = useLandingPage();
@@ -12,7 +12,7 @@ export default function Plans() {
       {!isShowDropdown ? (
         <>
           <Header toggleShowDropdown={toggleShowDropdown} />
-          <PlansContent />
+          <PlansTemplate />
         </>
       ) : (
         <Dropdown toggleShowDropdown={toggleShowDropdown} />

@@ -1,7 +1,7 @@
 "use client";
 import { menuSteps } from "@/(public)/menu";
 import { Title } from "@/core/components/(public)/atoms/title";
-import { Step } from "@/(public)/(landing-page)/ui/step";
+import { Step } from '@/core/components/(public)/atoms/step'
 import { Button } from "@/core/components/(public)/atoms/button";
 import { useMediaQuery } from "@/(public)/(landing-page)/hooks/useMediaQuery";
 

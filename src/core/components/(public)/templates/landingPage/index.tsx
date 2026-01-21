@@ -1,5 +1,3 @@
-"use client";
-
 import { Faq } from '@/core/components/(public)/molecules/faq'
 import { Hero } from "@/core/components/(public)/molecules/hero";
 import { Works } from "@/core/components/(public)/molecules/works";
@@ -11,9 +9,11 @@ import { Avaliation } from '@/core/components/(public)/molecules/avaliations'
 import { Differential } from "@/core/components/(public)/molecules/differential";
 import { useLandingPage } from "@/(public)/(landing-page)/hooks/useLandingPage";
 
-const TemplateLandingPage = () => {
-  const { toggleShowDropdown, isShowDropdown } = useLandingPage();
+type Props = {
+  toggleShowDropdown: () => void
+}
 
+const TemplateLandingPage = ({ toggleShowDropdown }: Props) => {
   return (
     <>
       <Header toggleShowDropdown={toggleShowDropdown} />

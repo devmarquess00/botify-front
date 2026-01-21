@@ -1,6 +1,6 @@
 "use client";
 import { Title } from "@/core/components/(public)/atoms/title";
-import { FaqCard } from "@/(public)/(landing-page)/ui/faq-card";
+import { CardFaq } from '@/core/components/(public)/atoms/cardFaq'
 import { useLandingPage } from "@/(public)/(landing-page)/hooks/useLandingPage";
 import { useMediaQuery } from "@/(public)/(landing-page)/hooks/useMediaQuery";
 
@@ -17,25 +17,25 @@ const Faq = () => {
         className="text-center font-poppins font-normal!"
       />
       <div className="flex flex-col space-y-2 mt-8 font-poppins lg:px-40">
-        <FaqCard
+        <CardFaq
           title="Como criar e personalizar meu ChatBot?"
           subtitle="Voce pode criar o seu ChatBot personalizando informaçoes como o nome, menu e o fluxo de resposta desse bot."
           showButton={faq1}
           onClick={() => setFaq1((prev) => !prev)}
         />
-        <FaqCard
+        <CardFaq
           title="Como eu posso começar a usar assim que estiver criado?"
           subtitle="Assim que o Bot for criado será gerado um QR Code para voce integrar no seu WhatsApp e assim o Bot já estará funcionando."
           showButton={faq2}
           onClick={() => setFaq2((prev) => !prev)}
         />
-        <FaqCard
+        <CardFaq
           title="Qual é o preço de um ChatBot?"
           subtitle="Voce paga apenas uma vez para a criaçao do seu Bot no valor de R$150.00"
           showButton={faq3}
           onClick={() => setFaq3((prev) => !prev)}
         />
-        <FaqCard
+        <CardFaq
           title="Eu posso mudar as configuraçoes do meu ChatBot?"
           subtitle="Sim, voce pode mudar quantas vezes quiser seu ChatBot. Isso permite que caso o seu negocio tenha regras novas voce pode altera-las nesse mesmo ChatBot"
           showButton={faq4}
