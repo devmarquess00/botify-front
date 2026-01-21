@@ -6,7 +6,7 @@ import { Subtitle } from "@/core/components/(public)/atoms/subtitle";
 import { FormProvider } from "react-hook-form";
 import { LuKey, LuMail } from "react-icons/lu";
 import { InputController } from "@/core/components/(public)/atoms/inputController";
-import { FormLoginSchema, formLogin } from "@/core/schemas/authLogin";
+import { FormLoginSchema, formLogin } from "@/core/schemas/login";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 const FormLogin = () => {
@@ -14,12 +14,8 @@ const FormLogin = () => {
     resolver: zodResolver(formLogin),
   });
 
-  const { errors } = methods.formState;
-
-  console.log(errors);
-
   const onSubmit = (data: any) => {
-    console.log(data);
+    console.log("teste");
   };
 
   return (
@@ -31,8 +27,16 @@ const FormLogin = () => {
       />
       <Form onSubmit={methods.handleSubmit(onSubmit)}>
         <div className="flex flex-col space-y-2">
-          <InputController name="email" icon={LuMail} />
-          <InputController name="password" icon={LuKey} />
+          <InputController
+            name="email"
+            icon={LuMail}
+            textError={methods.formState.errors}
+          />
+          <InputController
+            name="password"
+            icon={LuKey}
+            textError={methods.formState.errors}
+          />
         </div>
         <Button
           text="Fazer login"

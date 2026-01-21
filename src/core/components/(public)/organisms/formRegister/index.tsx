@@ -1,13 +1,17 @@
 import { Form } from "@/core/components/(public)/atoms/form";
-import { Title } from '@/core/components/(public)/atoms/title'
+import { Title } from "@/core/components/(public)/atoms/title";
 import { Button } from "@/core/components/(public)/atoms/button";
-import { Subtitle } from '@/core/components/(public)/atoms/subtitle'
+import { Subtitle } from "@/core/components/(public)/atoms/subtitle";
 import { InputController } from "@/core/components/(public)/atoms/inputController";
 import { FormProvider, useForm } from "react-hook-form";
 import { LuKey, LuMail, LuUser } from "react-icons/lu";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { formRegister, FormRegisterSchema } from "@/core/schemas/register";
 
 const FormRegister = () => {
-  const methods = useForm();
+  const methods = useForm<FormRegisterSchema>({
+    resolver: zodResolver(formRegister),
+  });
 
   const onSubmit = (data: any) => {
     console.log(data);
@@ -16,12 +20,27 @@ const FormRegister = () => {
   return (
     <FormProvider {...methods}>
       <Title title="Crie sua conta" as="h1" className="font-hedvig text-5xl" />
-      <Subtitle subtitle="É gratuito e rápido." className="font-poppins opacity-60 mb-6" />
+      <Subtitle
+        subtitle="É gratuito e rápido."
+        className="font-poppins opacity-60 mb-6"
+      />
       <Form onSubmit={methods.handleSubmit(onSubmit)}>
         <div className="flex flex-col space-y-2">
-          <InputController name="name" icon={LuUser} />
-          <InputController name="email" icon={LuMail} />
-          <InputController name="password" icon={LuKey} />
+          <InputController
+            name="name"
+            icon={LuUser}
+            textError={methods.formState.errors}
+          />
+          <InputController
+            name="email"
+            icon={LuMail}
+            textError={methods.formState.errors}
+          />
+          <InputController
+            name="password"
+            icon={LuKey}
+            textError={methods.formState.errors}
+          />
         </div>
         <Button
           text="Crie sua conta"
