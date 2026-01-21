@@ -12,12 +12,12 @@ const Sidebar = () => {
 
   return (
     <aside
-      className={`bg-white h-screen px-6 py-10 flex flex-col ${isOpen ? "w-64 items-start relative" : "w-28 items-center"}`}
+      className={`border-r border-zinc-200 bg-white h-screen px-6 py-6 flex flex-col ${isOpen ? "w-64 items-start relative" : "w-28 items-center"}`}
     >
       <div
         className={`w-full flex items-center mb-2 ${isOpen ? "justify-between" : "justify-center"}`}
       >
-        {isOpen && <Title title="Botify" variantTag="h2" />}
+        {isOpen && <Title title="Botify" variantTitle="h2" />}
         <Button
           className="p-3 rounded-md hover:bg-green-primary/20"
           onClick={toggleSidebar}
@@ -25,7 +25,7 @@ const Sidebar = () => {
           <LuPanelRight size={20} />
         </Button>
       </div>
-      <ul className="flex flex-col space-y-1.5 border-t border-zinc-200 pt-8 w-full">
+      <ul className="flex flex-col space-y-1.5 pt-8 w-full">
         {SidebarMenu &&
           SidebarMenu.map((menu: SidebarProps) => {
             const Icon = menu?.icon;

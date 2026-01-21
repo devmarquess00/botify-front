@@ -1,4 +1,4 @@
-export const tags = {
+export const classNamesTitle = {
   h1: "text-4xl",
   h2: "text-2xl",
   h3: "text-xl",

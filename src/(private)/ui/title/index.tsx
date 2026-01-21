@@ -1,14 +1,18 @@
-import { tags } from "@/(private)/ui/title/constants";
+import { classNamesTitle } from "@/(private)/ui/title/constants";
 
-type VariantTags = "h1" | "h2" | "h3";
+type VariantTitleProps = "h1" | "h2" | "h3";
 type Props = {
   title: string;
   className?: string;
-  variantTag: VariantTags;
+  variantTitle: VariantTitleProps;
 };
 
-const Title = ({ title, className, variantTag }: Props) => {
-  return <h1 className={`font-semibold ${tags[variantTag]}`}>{title}</h1>;
+const Title = ({ title, className, variantTitle }: Props) => {
+  return (
+    <h1 className={`font-semibold ${classNamesTitle[variantTitle]}`}>
+      {title}
+    </h1>
+  );
 };
 
 export { Title };
