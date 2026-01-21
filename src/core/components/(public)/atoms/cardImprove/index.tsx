@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import { Title } from "@/core/components/(public)/atoms/title";
-import { Subtitle } from "@/core/components/(public)/atoms/subtitle";
+import { Title } from '@/core/components/(public)/atoms/title'
+import { Subtitle } from '@/core/components/(public)/atoms/subtitle'
 
 type Props = {
   icon: ReactNode;
@@ -8,8 +8,8 @@ type Props = {
   subtitle: string;
 };
 
-const Card = ({ icon, title, subtitle }: Props) => {
-  return (
+const CardImprove = ({ icon, title, subtitle }: Props) => {
+    return (
     <div className="bg-white rounded-md px-10 py-6 w-full h-full 2xl:w-86 lg:h-92">
       <div className="flex flex-col justify-center items-center">
         <span className="text-green-primary text-5xl">{icon}</span>
@@ -25,6 +25,6 @@ const Card = ({ icon, title, subtitle }: Props) => {
       </div>
     </div>
   );
-};
+}
 
-export { Card };
+export { CardImprove }

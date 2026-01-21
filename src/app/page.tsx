@@ -6,11 +6,12 @@ import { TemplateLandingPage } from "@/core/components/(public)/templates/landin
 
 export default function Home() {
   const { toggleShowDropdown, isShowDropdown } = useLandingPage();
-
   return (
     <main className="w-full h-full bg-primary flex flex-col">
       {!isShowDropdown ? (
-        <TemplateLandingPage />
+        <TemplateLandingPage
+        toggleShowDropdown={toggleShowDropdown}
+        />
       ) : (
         <Dropdown toggleShowDropdown={toggleShowDropdown} />
       )}

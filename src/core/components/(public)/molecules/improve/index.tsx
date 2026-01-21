@@ -1,7 +1,7 @@
 "use client";
 import { menuCards } from "@/(public)/menu";
 import { Title } from "@/core/components/(public)/atoms/title";
-import { Card } from "@/(public)/(landing-page)/ui/card";
+import { CardImprove } from '@/core/components/(public)/atoms/cardImprove'
 import { useMediaQuery } from "@/(public)/(landing-page)/hooks/useMediaQuery";
 
 const Improve = () => {
@@ -18,7 +18,7 @@ const Improve = () => {
 
         <div className="flex flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:space-x-6 my-8">
           {menuCards.map((menu) => (
-            <Card
+            <CardImprove
               key={menu.id}
               icon={menu.icon}
               title={menu.title}
