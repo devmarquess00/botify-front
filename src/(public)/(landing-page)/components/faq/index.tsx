@@ -1,5 +1,5 @@
 "use client";
-import { Title } from "@/(public)/ui/title";
+import { Title } from "@/core/components/(public)/atoms/title";
 import { FaqCard } from "@/(public)/(landing-page)/ui/faq-card";
 import { useLandingPage } from "@/(public)/(landing-page)/hooks/useLandingPage";
 import { useMediaQuery } from "@/(public)/(landing-page)/hooks/useMediaQuery";

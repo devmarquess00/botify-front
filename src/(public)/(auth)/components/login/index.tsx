@@ -1,6 +1,6 @@
-import { Title } from "@/(public)/ui/title";
-import { Subtitle } from "@/(public)/ui/subtitle";
-import { Button } from "@/(public)/ui/button";
+import { Title } from "@/core/components/(public)/atoms/title";
+import { Subtitle } from "@/core/components/(public)/atoms/subtitle";
+import { Button } from "@/core/components/(public)/atoms/button";
 import { Form } from "@/(public)/(auth)/ui/form";
 import { Input } from "@/(public)/(auth)/ui/input";
 import { LuKey, LuMail } from "react-icons/lu";

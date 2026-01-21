@@ -1,5 +1,5 @@
 import { menuFooter } from "@/(public)/menu";
-import { Title } from "@/(public)/ui/title";
+import { Title } from "@/core/components/(public)/atoms/title";
 import Image from "next/image";
 
 const Footer = () => {

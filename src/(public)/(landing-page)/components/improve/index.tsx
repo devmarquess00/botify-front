@@ -1,6 +1,6 @@
 "use client";
 import { menuCards } from "@/(public)/menu";
-import { Title } from "@/(public)/ui/title";
+import { Title } from "@/core/components/(public)/atoms/title";
 import { Card } from "@/(public)/(landing-page)/ui/card";
 import { useMediaQuery } from "@/(public)/(landing-page)/hooks/useMediaQuery";
 

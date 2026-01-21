@@ -1,5 +1,5 @@
-import { Subtitle } from "@/(public)/ui/subtitle";
-import { Title } from "@/(public)/ui/title";
+import { Subtitle } from "@/core/components/(public)/atoms/subtitle";
+import { Title } from "@/core/components/(public)/atoms/title";
 import { LuMinus, LuPlus } from "react-icons/lu";
 
 type Props = {

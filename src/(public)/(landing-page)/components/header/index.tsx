@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Title } from "@/(public)/ui/title";
-import { Button } from "@/(public)/ui/button";
+import { Title } from "@/core/components/(public)/atoms/title";
+import { Button } from "@/core/components/(public)/atoms/button";
 import { menuHeader } from "@/(public)/menu";
 import { LuMenu } from "react-icons/lu";
 

@@ -1,5 +1,5 @@
-import { Title } from "@/(public)/ui/title";
-import { Subtitle } from "@/(public)/ui/subtitle";
+import { Title } from "@/core/components/(public)/atoms/title";
+import { Subtitle } from "@/core/components/(public)/atoms/subtitle";
 
 type Props = {
   step: string;

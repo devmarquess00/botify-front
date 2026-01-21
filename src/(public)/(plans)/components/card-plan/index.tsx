@@ -1,6 +1,6 @@
-import { Subtitle } from "@/(public)/ui/subtitle";
-import { Title } from "@/(public)/ui/title";
-import { Button } from "@/(public)/ui/button";
+import { Subtitle } from "@/core/components/(public)/atoms/subtitle";
+import { Title } from "@/core/components/(public)/atoms/title";
+import { Button } from "@/core/components/(public)/atoms/button";
 import { LuCheck, LuX } from "react-icons/lu";
 
 type Props = {

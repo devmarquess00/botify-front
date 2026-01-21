@@ -1,7 +1,6 @@
-import { Title } from "@/(public)/ui/title";
+import { Title } from "@/core/components/(public)/atoms/title";
 import Link from "next/link";
-import { Button } from "@/(public)/ui/button";
-import { Dispatch, SetStateAction } from "react";
+import { Button } from "@/core/components/(public)/atoms/button";
 
 type Props = {
   toggleShowComponent: (textButton: string) => void;

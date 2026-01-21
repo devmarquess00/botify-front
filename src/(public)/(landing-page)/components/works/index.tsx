@@ -1,8 +1,8 @@
 "use client";
 import { menuSteps } from "@/(public)/menu";
-import { Title } from "@/(public)/ui/title";
+import { Title } from "@/core/components/(public)/atoms/title";
 import { Step } from "@/(public)/(landing-page)/ui/step";
-import { Button } from "@/(public)/ui/button";
+import { Button } from "@/core/components/(public)/atoms/button";
 import { useMediaQuery } from "@/(public)/(landing-page)/hooks/useMediaQuery";
 
 const Works = () => {

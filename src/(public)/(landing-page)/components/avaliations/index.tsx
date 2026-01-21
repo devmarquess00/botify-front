@@ -1,7 +1,7 @@
 "use client";
 import { menuAvaliations } from "@/(public)/menu";
-import { Subtitle } from "@/(public)/ui/subtitle";
-import { Title } from "@/(public)/ui/title";
+import { Subtitle } from "@/core/components/(public)/atoms/subtitle";
+import { Title } from "@/core/components/(public)/atoms/title";
 import { useMediaQuery } from "@/(public)/(landing-page)/hooks/useMediaQuery";
 
 const Avaliation = () => {

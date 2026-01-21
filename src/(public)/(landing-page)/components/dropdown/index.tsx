@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { LuChevronRight, LuX } from "react-icons/lu";
-import { Button } from "@/(public)/ui/button";
-import { Title } from "@/(public)/ui/title";
+import { Button } from "@/core/components/(public)/atoms/button";
+import { Title } from "@/core/components/(public)/atoms/title";
 import { menuHeader } from "@/(public)/menu";
 
 type Props = {
