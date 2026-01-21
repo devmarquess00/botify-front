@@ -3,7 +3,7 @@ import { Title } from "@/core/components/(public)/atoms/title";
 import { Subtitle } from "@/core/components/(public)/atoms/subtitle";
 import { Button } from "@/core/components/(public)/atoms/button";
 
-const CallPlans = () => {
+const PlansCall = () => {
   return (
     <section className="bg-[linear-gradient(97deg,rgba(10,10,9,1)_0%,rgba(0,0,0,1)_50%,rgba(33,30,30,1)_100%)] text-white w-full h-full px-10 py-14 sm:px-20 md:px-40 lg:py-24">
       <div className="flex flex-col items-center justify-center max-w-4xl mx-auto">
@@ -29,4 +29,4 @@ const CallPlans = () => {
   );
 };
 
-export { CallPlans };
+export { PlansCall };
