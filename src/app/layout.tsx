@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
-import { LenisProvider } from "@/provider/LenisProvider";
 import { Poppins, Hedvig_Letters_Serif } from "next/font/google";
+import { ReactQueryProvider } from "@/provider/reactQuery/ReactQueryProvider";
+import { LenisProvider } from "@/provider/LenisProvider";
+import type { Metadata } from "next";
 import "./globals.css";
 
 const hedvig = Hedvig_Letters_Serif({
@@ -26,9 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${hedvig.variable} antialiased`}>
-        <LenisProvider>{children}</LenisProvider>
-      </body>
+      <ReactQueryProvider>
+        <body className={`${poppins.variable} ${hedvig.variable} antialiased`}>
+          <LenisProvider>{children}</LenisProvider>
+        </body>
+      </ReactQueryProvider>
     </html>
   );
 }
