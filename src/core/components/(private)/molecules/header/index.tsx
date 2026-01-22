@@ -1,9 +1,8 @@
 "use client";
-import { LuUser } from "react-icons/lu";
-import { Button } from "@/(private)/ui/button";
-import { Subtitle } from "@/(private)/ui/subtitle";
-import { useLayout } from "@/(private)/hooks/useLayout";
-import { PopUp } from "@/(private)/components/pop-up";
+import { Button } from "@/core/components/(private)/atoms/button";
+import { Subtitle } from "@/core/components/(private)/atoms/subtitle";
+import { useLayout } from "@/core/hooks/(private)/useLayout";
+import { PopUp } from "@/core/components/(private)/atoms/popup";
 
 const Header = () => {
   const { popUp, togglePopUp } = useLayout();

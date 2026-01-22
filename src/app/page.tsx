@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useLandingPage } from "@/(public)/(landing-page)/hooks/useLandingPage";
-import { Dropdown } from "@/core/components/(public)/molecules/dropdown"
+import { useLandingPage } from "@/core/hooks/(public)/landingPage";
+import { Dropdown } from "@/core/components/(public)/molecules/dropdown";
 import { TemplateLandingPage } from "@/core/components/(public)/templates/landingPage";
 
 export default function Home() {
@@ -9,9 +9,7 @@ export default function Home() {
   return (
     <main className="w-full h-full bg-primary flex flex-col">
       {!isShowDropdown ? (
-        <TemplateLandingPage
-        toggleShowDropdown={toggleShowDropdown}
-        />
+        <TemplateLandingPage toggleShowDropdown={toggleShowDropdown} />
       ) : (
         <Dropdown toggleShowDropdown={toggleShowDropdown} />
       )}

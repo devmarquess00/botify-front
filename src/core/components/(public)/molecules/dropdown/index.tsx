@@ -2,7 +2,7 @@ import Link from "next/link";
 import { LuChevronRight, LuX } from "react-icons/lu";
 import { Button } from "@/core/components/(public)/atoms/button";
 import { Title } from "@/core/components/(public)/atoms/title";
-import { menuHeader } from "@/(public)/menu";
+import { menuHeader } from "@/menu";
 
 type Props = {
   toggleShowDropdown: () => void;

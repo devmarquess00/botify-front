@@ -1,6 +1,6 @@
 import { LuLogOut } from "react-icons/lu";
-import { Button } from "@/(private)/ui/button";
-import { Subtitle } from "@/(private)/ui/subtitle";
+import { Button } from "@/core/components/(private)/atoms/button";
+import { Subtitle } from "@/core/components/(private)/atoms/subtitle";
 
 type Props = {
   popUpShow: boolean;
@@ -31,7 +31,7 @@ const PopUp = ({ popUpShow }: Props) => {
         </div>
       </div>
       <Button className="flex items-center space-x-2 mt-4">
-        <LuLogOut /> 
+        <LuLogOut />
         <Subtitle subtitle="Sair" variantSubtitle="subtitle-medium" />
       </Button>
     </div>

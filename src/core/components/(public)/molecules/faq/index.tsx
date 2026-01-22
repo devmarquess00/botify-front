@@ -1,8 +1,8 @@
 "use client";
 import { Title } from "@/core/components/(public)/atoms/title";
-import { CardFaq } from '@/core/components/(public)/atoms/cardFaq'
-import { useLandingPage } from "@/(public)/(landing-page)/hooks/useLandingPage";
-import { useMediaQuery } from "@/(public)/(landing-page)/hooks/useMediaQuery";
+import { CardFaq } from "@/core/components/(public)/atoms/cardFaq";
+import { useLandingPage } from "@/core/hooks/(public)/landingPage";
+import { useMediaQuery } from "@/core/hooks/(public)/mediaQuery";
 
 const Faq = () => {
   const { faq1, setFaq1, faq2, setFaq2, faq3, setFaq3, faq4, setFaq4 } =

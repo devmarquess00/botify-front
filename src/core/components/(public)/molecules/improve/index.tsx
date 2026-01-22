@@ -1,8 +1,8 @@
 "use client";
-import { menuCards } from "@/(public)/menu";
+import { menuCards } from "@/menu";
 import { Title } from "@/core/components/(public)/atoms/title";
-import { CardImprove } from '@/core/components/(public)/atoms/cardImprove'
-import { useMediaQuery } from "@/(public)/(landing-page)/hooks/useMediaQuery";
+import { CardImprove } from "@/core/components/(public)/atoms/cardImprove";
+import { useMediaQuery } from "@/core/hooks/(public)/mediaQuery";
 
 const Improve = () => {
   const isMobile = useMediaQuery("(max-width: 767px)");

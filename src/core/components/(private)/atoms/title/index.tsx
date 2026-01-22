@@ -1,4 +1,4 @@
-import { classNamesTitle } from "@/(private)/ui/title/constants";
+import { classNamesTitle } from "@/core/components/(private)/atoms/title/constants";
 
 type VariantTitleProps = "title-big" | "title-medium" | "title-small";
 type Props = {

@@ -1,5 +1,5 @@
-import { Header } from "@/(private)/components/header";
-import { Sidebar } from "@/(private)/components/sidebar";
+import { Header } from "@/core/components/(private)/molecules/header";
+import { Sidebar } from "@/core/components/(private)/molecules/sidebar";
 import { ReactNode } from "react";
 
 type Props = {

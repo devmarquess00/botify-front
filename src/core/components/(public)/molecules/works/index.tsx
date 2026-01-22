@@ -1,9 +1,9 @@
 "use client";
-import { menuSteps } from "@/(public)/menu";
+import { menuSteps } from "@/menu";
 import { Title } from "@/core/components/(public)/atoms/title";
-import { Step } from '@/core/components/(public)/atoms/step'
+import { Step } from "@/core/components/(public)/atoms/step";
 import { Button } from "@/core/components/(public)/atoms/button";
-import { useMediaQuery } from "@/(public)/(landing-page)/hooks/useMediaQuery";
+import { useMediaQuery } from "@/core/hooks/(public)/mediaQuery";
 
 const Works = () => {
   const isMobile = useMediaQuery("(max-width: 767px)");

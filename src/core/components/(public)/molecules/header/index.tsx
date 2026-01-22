@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Title } from "@/core/components/(public)/atoms/title";
 import { Button } from "@/core/components/(public)/atoms/button";
-import { menuHeader } from "@/(public)/menu";
+import { menuHeader } from "@/menu";
 import { LuMenu } from "react-icons/lu";
 
 type Props = {

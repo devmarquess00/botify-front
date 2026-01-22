@@ -1,6 +1,6 @@
 "use client";
 import { Dropdown } from "@/core/components/(public)/molecules/dropdown";
-import { useLandingPage } from "@/(public)/(landing-page)/hooks/useLandingPage";
+import { useLandingPage } from "@/core/hooks/(public)/landingPage";
 import { PlansTemplate } from "@/core/components/(public)/templates/plans";
 import { Header } from "@/core/components/(public)/molecules/header";
 

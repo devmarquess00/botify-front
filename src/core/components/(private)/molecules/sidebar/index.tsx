@@ -1,11 +1,10 @@
 "use client";
 import Link from "next/link";
-import { SidebarMenu } from "@/(private)/constants";
-import { SidebarProps } from "@/(private)/constants";
+import { SidebarMenu, SidebarProps } from "@/core/constants/(private)";
 import { LuPanelRight } from "react-icons/lu";
-import { Button } from "@/(private)/ui/button";
-import { useLayout } from "@/(private)/hooks/useLayout";
-import { Title } from "@/(private)/ui/title";
+import { Button } from "@/core/components/(private)/atoms/button";
+import { useLayout } from "@/core/hooks/(private)/useLayout";
+import { Title } from "@/core/components/(private)/atoms/title";
 
 const Sidebar = () => {
   const { isOpen, toggleSidebar } = useLayout();
@@ -37,7 +36,11 @@ const Sidebar = () => {
                 className={`font-normal duration-200 flex w-full text-sm hover:bg-green-primary/20 rounded-md px-2 ${isOpen ? "space-x-4 items-center" : "justify-center items-center space-x-0"}`}
               >
                 <Icon size={20} />
-                <li className={`${isOpen ? 'flex items-center opacity-100 w-auto h-12' : 'opacity-0 w-0 h-12'}`}>{menu.label}</li>
+                <li
+                  className={`${isOpen ? "flex items-center opacity-100 w-auto h-12" : "opacity-0 w-0 h-12"}`}
+                >
+                  {menu.label}
+                </li>
               </Link>
             );
           })}

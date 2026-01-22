@@ -1,8 +1,8 @@
 "use client";
-import { menuAvaliations } from "@/(public)/menu";
+import { menuAvaliations } from "@/menu";
 import { Subtitle } from "@/core/components/(public)/atoms/subtitle";
 import { Title } from "@/core/components/(public)/atoms/title";
-import { useMediaQuery } from "@/(public)/(landing-page)/hooks/useMediaQuery";
+import { useMediaQuery } from "@/core/hooks/(public)/mediaQuery";
 
 const Avaliation = () => {
   const isMobile = useMediaQuery("(max-width: 767px)");

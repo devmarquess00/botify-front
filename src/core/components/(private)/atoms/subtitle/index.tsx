@@ -1,4 +1,4 @@
-import { classNamesSubtitle } from "@/(private)/ui/subtitle/constants";
+import { classNamesSubtitle } from "@/core/components/(private)/atoms/subtitle/constants";
 
 type VariantSubtitleProps =
   | "subtitle-big"

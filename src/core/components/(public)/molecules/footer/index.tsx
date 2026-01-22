@@ -1,4 +1,4 @@
-import { menuFooter } from "@/(public)/menu";
+import { menuFooter } from "@/menu";
 import { Title } from "@/core/components/(public)/atoms/title";
 import Image from "next/image";
 

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Title } from "@/core/components/(public)/atoms/title";
 import { Button } from "@/core/components/(public)/atoms/button";
 import { Subtitle } from "@/core/components/(public)/atoms/subtitle";
-import { menuDifferential } from "@/(public)/menu";
+import { menuDifferential } from "@/menu";
 
 const Differential = () => {
   return (

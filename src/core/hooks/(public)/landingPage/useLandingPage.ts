@@ -1,6 +1,7 @@
 import { useCallback, useState } from "react";
 
 export function useLandingPage() {
+  const [steps, setSteps] = useState<number>(0);
   const [faq1, setFaq1] = useState<boolean>(false);
   const [faq2, setFaq2] = useState<boolean>(false);
   const [faq3, setFaq3] = useState<boolean>(false);
@@ -12,7 +13,14 @@ export function useLandingPage() {
     setIsShowDropdown((prev) => !prev);
   }, []);
 
+  const toggleShowComponent = (textButton: string) => {
+    textButton === "createCount" ? setSteps(1) : setSteps(0);
+  };
+
   return {
+    steps,
+    setSteps,
+    toggleShowComponent,
     faq1,
     setFaq1,
     faq2,

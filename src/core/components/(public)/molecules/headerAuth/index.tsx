@@ -1,12 +1,12 @@
-import { Title } from "@/core/components/(public)/atoms/title";
 import Link from "next/link";
+import { Title } from "@/core/components/(public)/atoms/title";
 import { Button } from "@/core/components/(public)/atoms/button";
 
 type Props = {
   toggleShowComponent: (textButton: string) => void;
 };
 
-const Header = ({ toggleShowComponent }: Props) => {
+const HeaderAuth = ({ toggleShowComponent }: Props) => {
   return (
     <header className="flex items-center justify-between w-full bg-white font-poppins px-10 py-6 lg:px-30 2xl:px-100">
       <div className="flex items-center space-x-10">
@@ -32,4 +32,4 @@ const Header = ({ toggleShowComponent }: Props) => {
   );
 };
 
-export { Header };
+export { HeaderAuth };
