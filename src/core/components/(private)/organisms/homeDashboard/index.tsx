@@ -15,6 +15,11 @@ const HomeDashboard = () => {
   const data = [
     { month: "Jan", revenue: 400 },
     { month: "Fev", revenue: 700 },
+    { month: "Abr", revenue: 100 },
+    { month: "Mai", revenue: 300 },
+    { month: "Jun", revenue: 900 },
+    { month: "Jul", revenue: 400 },
+    { month: "Ago", revenue: 360 },
   ];
 
   return (
@@ -39,7 +44,7 @@ const HomeDashboard = () => {
       <div className="mt-8">
         <ChartContainer
           config={chartConfig}
-          className="h42 w-122 bg-white shadow-md border border-zinc-200 rounded-md"
+          className="h42 w-122 bg-white shadow-sm rounded-md border border-zinc-200/60"
         >
           <BarChart data={data} barCategoryGap={4}>
             <XAxis dataKey="month" />
